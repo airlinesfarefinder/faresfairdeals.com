@@ -7,6 +7,14 @@ const app = express();
 const port = 5002;
 
 
+// const config = require('./views/cruise/inc/config.ejs');
+
+// app.get('/', (req, res) => {
+//   res.render('index', { config });
+// });
+
+
+
 // Set EJS as templating engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -57,6 +65,12 @@ app.get('/cancellation-refund', (req, res) => {
 app.get('/uk-flights', (req, res) => {
   res.render('ukflights', { title: 'UK Flights' });
 });
+
+
+
+// app.get('/cruise', (req, res) => {
+//   res.render('cruise', { config });
+// });
 
 // Route for sitemap.xml
 app.get('/sitemap.xml', (req, res) => {
