@@ -1,0 +1,337 @@
+  <div id="boxes" class="col-sm-6 col-sm-offset-3">
+        <a href="tel:(844) 945-9666">
+            <div class="d-block d-md-block d-lg-none">
+                <div class="modal fade show custompopup" style="display: block;">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content pt-0">
+                            <!-- Close Button -->
+                            <button class="closePopup" onclick="closePopup()">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </button>
+                            <div class="popup-content">
+                                <img alt="Logo" class="header-logo" loading="lazy" width="120" height="40"
+                                    decoding="async" data-nimg="1" style="color:transparent" src="images/expedia.png">
+                                <p>Talk to a travel expert and Save 25%</p>
+                                <h2 class="support-no">
+                                    <i class="fas fa-headset"></i> (844) 945-9666
+                                </h2>
+                                <hr>
+                                <h5>24/7 Reservation Support</h5>
+                                <div class="row justify-content-center">
+                                    <div class="col-6 align-self-center"><img alt="Logo" class="" loading="lazy"
+                                            width="50" height="50" decoding="async" data-nimg="1"
+                                            style="color:transparent;width:100%;height:auto" sizes="100vw"
+                                            src="images/left-man.jpg"></div>
+                                    <div class="col-6">
+                                        <ul class="arrow-list">
+                                            <li>Tickets Booking</li>
+                                            <li>Manage Booking</li>
+                                            <li>Customer Service</li>
+                                            <li>Cancellation & Refunds</li>
+                                            <li>Quick & Easy Changes/Rebook</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-3 call-offers">
+                                        <img src="images/cal2.gif" style="width:50px; height:50px">
+                                        <div>
+                                            <p class="mb-0">Call Us &amp; get Upto <small>40%OFF</small> on Flights</p>
+                                            <h4 class="mb-0">(844) 945-9666</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <style>
+        .closePopup {
+            position: absolute;
+            top: 30px;
+            right: 34px;
+            background-color: transparent;
+            color: #000;
+            /* Adjust color as needed */
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 20;
+        }
+
+        .closePopup i {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .closePopup:hover {
+            color: #f00;
+            /* Optional hover effect */
+        }
+    </style>
+
+    <script>
+        function closePopup() {
+            var popup = document.getElementById("boxes");
+            popup.style.display = "none";
+        }
+    </script>
+
+    <style>
+        .d-lg-none {
+            display: none !important;
+        }
+
+        #boxes {
+            display: none;
+        }
+
+        .modal.fade.show {
+            opacity: 1;
+            padding: 0 !important;
+            overflow: unset;
+            background: rgba(0, 0, 0, .85);
+            text-align: center;
+            z-index: 9999999999;
+        }
+
+        .popup-content {
+            background-color: #fff;
+            margin: 6% auto;
+            padding: 8px;
+            border: 1px solid #00185e;
+            width: 96%;
+            max-width: 375px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .custompopup .modal-footer.border-0 {
+            margin-top: 0px;
+        }
+
+        .border-0 {
+            border: 0 !important;
+        }
+
+        .modal-footer {
+            display: flex;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+            padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap)* .5);
+            background-color: var(--bs-modal-footer-bg);
+            border-top: var(--bs-modal-footer-border-width) solid var(--bs-modal-footer-border-color);
+            border-bottom-right-radius: var(--bs-modal-inner-border-radius);
+            border-bottom-left-radius: var(--bs-modal-inner-border-radius);
+        }
+
+        .pt-0 {
+            padding-top: 0 !important;
+        }
+
+        .modal-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            color: var(--bs-modal-color);
+            pointer-events: auto;
+            background-color: var(--bs-modal-bg);
+            background-clip: padding-box;
+            border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+            border-radius: var(--bs-modal-border-radius);
+            outline: 0;
+        }
+
+        .modal-content {
+            background: hsla(0, 0%, 100%, 0) !important;
+        }
+
+        .modal.show .modal-dialog {
+            transform: none;
+        }
+
+        .modal.fade .modal-dialog {
+            transition: transform .3s ease-out;
+            transform: translateY(91px);
+        }
+
+        @media (max-width: 767px) {
+            .modal.show .modal-dialog {
+                margin: 0;
+            }
+        }
+
+        .modal-dialog-centered {
+            display: flex;
+            align-items: center;
+            min-height: calc(100% - var(--bs-modal-margin)* 2);
+        }
+
+        .modal-dialog {
+            position: relative;
+            width: auto;
+            margin: var(--bs-modal-margin);
+            pointer-events: none;
+        }
+
+        .header-logo {
+            width: auto;
+            margin-bottom: 20px;
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+
+        .support-no {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ff5722;
+        }
+
+        hr {
+            width: 100%;
+            height: 3px !important;
+            color: #da552f !important;
+
+            margin-top: 0 !important;
+            margin: 1rem 0;
+
+            border: 0;
+            border-top: var(--bs-border-width) solid;
+            opacity: .25;
+        }
+
+        .justify-content-center {
+            justify-content: center !important;
+        }
+
+        .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(-1* var(--bs-gutter-y));
+            margin-right: calc(-.5* var(--bs-gutter-x));
+            margin-left: calc(-.5* var(--bs-gutter-x));
+        }
+
+        .align-self-center {
+            align-self: center !important;
+        }
+
+        .arrow-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            font-weight: 500;
+        }
+
+        .arrow-list li,
+        .arrow-list li:hover {
+            background: linear-gradient(90deg, #4d8cff, #fff);
+        }
+
+        .arrow-list li {
+            position: relative;
+            color: #00185e;
+            padding: 1px 0 0 7px !important;
+            margin: 12px 0 !important;
+            cursor: pointer;
+            transition: background .3s;
+            border-radius: 12px 0;
+
+            font-size: 16px;
+            line-height: 1.9;
+            font-weight: 400;
+        }
+
+        .call-offers {
+            width: 92%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: #00308D;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: #fff;
+            text-align: left;
+            margin-top: 12px;
+        }
+
+        .call-offers h4 {
+            font-size: 24px;
+        }
+
+        p.mb-0 {
+            font-size: 13px;
+        }
+
+        p.mb-0 small {
+            color: #fff;
+            background-color: #0f4ab5;
+            border-radius: 5px;
+            padding: 3px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .custompopup h4 {
+            margin-top: 10px;
+            color: #fff;
+            font-size: 25px;
+            line-height: 30px;
+            font-weight: 700;
+        }
+
+        @media (min-width:320px) and (max-width:767px) {
+            .d-block {
+                display: block !important;
+            }
+
+            .btn-secondary {
+                font-size: 14px;
+                font-weight: 600;
+                border-radius: 20px;
+                background: rgba(0, 74, 173, 0) !important;
+                color: #ed942d !important;
+                border: 0;
+                padding: 10px 30px !important;
+                right: -3px !important;
+                position: relative !important;
+                top: 79px !important;
+                border: none !important;
+            }
+
+            #boxes {
+                display: block;
+            }
+
+        }
+    </style>
+
+    <script>
+        function myFunction1() {
+            var x = document.getElementById("boxes");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        function myFunction1() {
+            var x = document.getElementById("boxes");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
