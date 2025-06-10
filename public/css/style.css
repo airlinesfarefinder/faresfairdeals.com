@@ -52,7 +52,7 @@ a:hover {
 #myNavbar>ul>li>a>strong {
     color: #fff;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
 
 }
 
@@ -1426,7 +1426,7 @@ ul.dropdown-menu li {
         background-color: #fff;
     }
     img.logo {
-        width: 100%;
+        width: 140px;
         margin: -10px 0 0 0;
     }
     .bg_clrddd {
