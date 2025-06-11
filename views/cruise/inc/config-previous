@@ -1,0 +1,13 @@
+<!-- <?php
+
+
+function config($key)
+{
+    static $configuration = [
+        'phone_number' => '1-800-803-5760',
+        'email_id' => 'info@thebestticketfares.com',
+        'address' => '3121 DE SOTO AVENUE, APT 132, CANOGA PARK, CA,91303 USA',
+    ];
+
+    return isset($configuration[$key]) ? $configuration[$key] : null;
+} -->

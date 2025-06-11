@@ -43,7 +43,9 @@ app.get('/contact', (req, res) => {
 app.get('/us-flights', (req, res) => {
   res.render('travel', { title: 'Travel' });
 });
-
+app.get('/cruise', (req, res) => {
+  res.render('cruise',  { title: 'Cruise' });
+});
 
 
 app.get('/disclaimer', (req, res) => {
@@ -68,8 +70,10 @@ app.get('/uk-flights', (req, res) => {
 
 
 
+
+
 // app.get('/cruise', (req, res) => {
-//   res.render('cruise', { config });
+//   res.render('cruise',  { title: 'Cruise' }, { config });
 // });
 
 // Route for sitemap.xml
